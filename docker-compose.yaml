@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  app:
+    image: 'ansim_report:1.4'
+    environment:
+      - USER_AGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3
+    secrets:
+      - api_key
+secrets:
+api_key:
+  external: true
